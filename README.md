@@ -8,56 +8,23 @@ APC Starter Template
 user: demo@test.com<br>
 password: demo2017
 
-### How to install 
-(1) Simply [download](https://github.com/jcadima/laravel-admin/archive/master.zip) or clone the repo:
+### How to install
 
-```
-git clone https://github.com/jcadima/laravel-admin.git
-```
+https://github.com/yusufbrima/APC.git
 
-**NOTE**: If using MariaDB you might see an error about "key too long", to fix this open:
 
-```
- /app/Providers/AppServiceProvider.php
-```
-
-make the following changes so that AppServiceProvider looks like:
-
-```php
-namespace App\Providers;
-
-use Illuminate\Support\ServiceProvider;
-// Include Schema
-use Illuminate\Support\Facades\Schema;
-
-class AppServiceProvider extends ServiceProvider
-{
-
-    public function boot()
-    {  
-        Schema::defaultStringLength(191) ;
-    }
-
-    public function register()
-    {
-        //
-    }
-}
-
-```
-
-(2) Install Composer
+(1) Install Composer
 ```
 composer install
 ```
 
 
-(3) Run Migrations
+(2) Run Migrations
 ```
 php artisan migrate
 ```
 
-(4) Run DB seeder
+(3) Run DB seeder
 ```
 php artisan db:seed
 ```
@@ -74,7 +41,7 @@ App\User::create([
 OR
 
 (4a) Import database
-[Laravel Admin DB](https://github.com/jcadima/laravel-admin/blob/master/laraveladmin.sql)
+[Laravel Admin DB](https://github.com/yusufbrima/APC/blob/master/laraveladmin.sql)
 
 Will create a user with the following credentials<br>
 user: demo@test.com <br/>
@@ -99,8 +66,3 @@ pass: demo2017
 * [X] Main dashboard page
 * [X] Users list in admin dashboard
 * [ ] Basic user CRUD operations
-
-
-### Screenshots
-
-![alt LoginDemo](http://juancadima.com/wp-content/uploads/laraveladmin.png)
