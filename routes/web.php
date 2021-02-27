@@ -27,4 +27,13 @@ Route::group([ 'middleware' => 'auth' ], function() {
     }) ;
 
     Route::get('admin/users', 'UsersController@index')->name('user.index') ;
+    Route::get('test',function(){
+        return view('admin.test');
+
+   });
 });
+
+Route::get('loogin',function(){
+    return view('admin.authuser.login');
+});
+
