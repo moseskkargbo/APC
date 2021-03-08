@@ -59,6 +59,76 @@
           </ul>
         </li>
       </ul>
+      <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Region</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Add Region</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Manage Region</a></li>
+          </ul>
+        </li>
+      </ul>
+      <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>District</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Add District</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Manage District</a></li>
+          </ul>
+        </li>
+      </ul>
+      <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Constituency</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Add Constituency</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Manage Constituency</a></li>
+          </ul>
+        </li>
+      </ul>
+      <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Ward</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Add Ward</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Manage Ward</a></li>
+          </ul>
+        </li>
+      </ul>
+      <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Polling Center</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Add Polling Center</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Manage Polling Center</a></li>
+          </ul>
+        </li>
+      </ul>
       
     </section>
     <!-- /.sidebar -->
