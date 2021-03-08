@@ -11,11 +11,26 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('admin.authuser.login');
+})->name('auth.login');
+
+Route::get('/user/password/email', function () {
+    return view('admin.authuser.password.email');
+})->name('auth.password.email');
+
+Route::get('/user/password/reset', function () {
+    return view('admin.authuser.password.reset');
+})->name('auth.password.reset');
+
+Route::get('/user/register', function () {
+    return view('admin.authuser.register');
+})->name('auth.register');
 
 Auth::routes();
+
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -32,8 +47,3 @@ Route::group([ 'middleware' => 'auth' ], function() {
 
    });
 });
-
-Route::get('loogin',function(){
-    return view('admin.authuser.login');
-});
-
