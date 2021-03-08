@@ -5,11 +5,11 @@
 
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
-      
+
         <div class="pull-left image">
           <img src="{{ asset('images/user.png') }}" class="img-circle" alt="User Image">
         </div>
-    
+
         <div class="pull-left info">
           <p>{{ Auth::user()->name }}</p>
           <!-- Status -->
@@ -38,28 +38,160 @@
 
 
         <!--  USERS  -->
-        <li class="{{ Request::path() == 'admin/users' ? 'active' : '' }}">
-          <a href="{{ route('user.index') }}"><i class="fa fa-user"></i> Users</a>
-        </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-laptop"></i>
-            <span>UI Elements</span>
+            <i class="fa fa-users"></i>
+            <span>Manage Users</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="{{ route('user.index') }}"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> User Roles</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
           </ul>
         </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Registrants</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Regions</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Districts</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Constituencies</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Wards</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Polling Centres</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Elections</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>Manage Candidates</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> View</a></li>
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Create</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Update</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Delete</a></li>
+          </ul>
+        </li>
+        <li>
+            <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                         document.getElementById('logout-form').submit();">
+                         <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
+        </li>
       </ul>
-      
     </section>
     <!-- /.sidebar -->
   </aside>
